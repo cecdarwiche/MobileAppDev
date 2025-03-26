@@ -12,13 +12,18 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Image.network("https://news.miami.edu/_assets/images-stories/2025/03/fec-week-hero-940x529.jpg", width: 400),
-        Text("University of Miami", style: TextStyle(
+        Padding(padding: EdgeInsets.all(10)),
+        Image.network("https://www.miamiherald.com/latest-news/9j2s7z/picture290428274/alternates/LANDSCAPE_1140/IMG_3826.jpeg", width: 400),
+        Padding(padding: EdgeInsets.all(10)),
+        Text("Cecile, welcome to your          University of Miami portal", 
+        textAlign: TextAlign.center,
+        style: TextStyle(
           color: Colors.deepOrange,
           fontSize: 30,)),
-        Padding(padding: EdgeInsets.all(50),
+        Padding(padding: EdgeInsets.all(15),
         child: 
-        Text("Set one foot on campus and you’ll feel it—a vibe that celebrates life, learning, and daily activities that are anything but routine.",
+        Text("Find all the things that you might need here, from all the latest university news, to grades and class schedules",
+        textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 23))
         ),
